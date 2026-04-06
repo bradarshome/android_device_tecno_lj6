@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<compatibility-matrix version="4.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.fpsensor.hardware.fpsensorhidlsvc</name>
+        <version>2.0</version>
+        <interface>
+            <name>IFpsensorHidlSvc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.transsion.hardware.trancam.trancamserver</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITrancamserver</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.transsion.hardware.tne.tneengine</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITne</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ITne/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.trustonic.tee</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ITee</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::ITee/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.trustonic.tee.tui</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITui</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ITui/default</fqname>
+    </hal>
+</compatibility-matrix>

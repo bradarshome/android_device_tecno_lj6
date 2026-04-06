@@ -136,14 +136,14 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
-# Dalvik configs
+# Dalvik configs (from LJ6 vendor build.prop)
 PRODUCT_VENDOR_PROPERTIES += \
-    dalvik.vm.heapstartsize=24m \
+    dalvik.vm.heapstartsize=16m \
     dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.46 \
-    dalvik.vm.heapminfree=8m \
-    dalvik.vm.heapmaxfree=48m
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=4m \
+    dalvik.vm.heapmaxfree=16m
 
 # Display
 PRODUCT_PACKAGES += \
@@ -307,10 +307,10 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    FrameworkResOverlayRozen \
-    SettingsResOverlayRozen \
-    SettingsProviderOverlayRozen \
-    SystemUIResOverlayRozen
+    FrameworkResOverlayRhythm \
+    SettingsResOverlayRhythm \
+    SettingsProviderOverlayRhythm \
+    SystemUIResOverlayRhythm
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
@@ -527,4 +527,4 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/tecno/LH7n/LH7n-vendor.mk)
+$(call inherit-product, vendor/tecno/LJ6/LJ6-vendor.mk)

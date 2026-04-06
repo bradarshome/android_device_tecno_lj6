@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/LH7n
+DEVICE_PATH := device/tecno/LJ6
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 COMMON_GKI_PATH := device/millennium/common-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
@@ -69,7 +69,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := rozen
+TARGET_BOOTLOADER_BOARD_NAME := rhythm
 TARGET_NO_BOOTLOADER := true
 
 # Broken Rules
@@ -81,7 +81,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
 # Display
-TARGET_SCREEN_DENSITY := 396
+TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
@@ -151,7 +151,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := LH7n,rozen
+TARGET_OTA_ASSERT_DEVICE := LJ6,rhythm
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
@@ -242,4 +242,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 TARGET_KERNEL_SOURCE := $(COMMON_GKI_PATH)/kernel-headers
 
 # Inherit the proprietary files
-include vendor/tecno/LH7n/BoardConfigVendor.mk
+include vendor/tecno/LJ6/BoardConfigVendor.mk

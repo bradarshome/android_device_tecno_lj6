@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsResOverlayH897",
+    name: "SettingsResOverlayRhythm",
     vendor: true,
 }

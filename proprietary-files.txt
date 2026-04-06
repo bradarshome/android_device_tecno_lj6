@@ -1,4 +1,5 @@
-# Unpinned blobs from LH7n-H894JKLM-U-GL-250416V781
+# Blobs from TECNO LJ6 (POVA 7 4G)
+# Based on LJ6-H8915AhAiAjAkAlAmAnAo-V-BASE-251016V1597DevT firmware
 
 # APU
 vendor/etc/vintf/manifest/manifest_apuware_apusys.xml

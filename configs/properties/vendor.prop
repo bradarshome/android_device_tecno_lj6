@@ -71,6 +71,7 @@ ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_widevine_drm_l1_support=1
 
 # Display
+ro.sf.lcd_density=440
 debug.graphics.game_default_frame_rate.disabled=true
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1

@@ -20,7 +20,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/tecno/LH7n',
+    'device/tecno/LJ6',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
     'hardware/mediatek/libaedv',
@@ -131,7 +131,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'LH7n',
+    'LJ6',
     'tecno',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
